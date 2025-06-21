@@ -122,9 +122,7 @@ p {
     z-index: -1;
 }
 
-.ser {
-   padding-left:px ;
-}
+
 
 .icon {
     width: 70px;
@@ -220,12 +218,12 @@ height: auto;
     color: white;
     text-align: center;
     background-color: #2d2d2d;
-    width: 100%;
+    
     display: block;
 }
 .inner-card{
     position: relative;
-    width: auto;
+    
     overflow: hidden;
     text-align: center;
     color: white;
@@ -323,3 +321,74 @@ footer p{
 .footer{
     color: #343434;
 }
+.container .row .col-12 .inner{
+    background-color: #d6d2d2;
+    padding: 10%;
+    border-radius: 10%;
+}.owl-carousel{
+    width: 100%;
+    display: block;
+}
+.owl-stage-outer{
+    overflow: hidden;
+}
+@media (max-width: 576px) {
+  h1{ font-size: 1.5rem !important;}}
+@media (max-width: 576px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2rem !important;
+  }
+
+  .card {
+    width: 100% !important;
+  }
+
+  .card-title, .card-text, p {
+    font-size: 1rem !important;
+  }
+
+  .header-caption h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .header-caption h5 {
+    font-size: 1.1rem !important;
+  }
+
+  .container, .row {
+    padding: 10px !important;
+  }
+}
+.titles{
+   color:linear-gradient(to right, #3ca55c, #b5ac49);
+}
+/* خط افتراضي كبير ومقروء */
+body {
+  font-family: 'Cairo', sans-serif;
+  font-size: 18px; /* حجم الخط الأساسي */
+  line-height: 1.7;
+}
+
+/* لو الشاشة صغيرة زي الموبايل */
+@media (max-width: 767px) {
+  body {
+    font-size: 18px; /* تخليه كبير وواضح برضو للموبايل */
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem; /* تعديلات على العناوين */
+  }
+
+  p, a, li {
+    font-size: 1.1rem;
+  }
+
+  .card-body h5 {
+    font-size: 1.2rem;
+  }
+
+  .card-body p {
+    font-size: 1rem;
+  }
+}
+
