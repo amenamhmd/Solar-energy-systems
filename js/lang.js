@@ -160,13 +160,13 @@ function setLanguage(lang) {
     }
   });
 
-  // تغيير اتجاه الصفحة
+
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   localStorage.setItem("lang", lang);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  setLanguage("ar"); // دائمًا ابدأ بعربي
+  setLanguage("ar");
 });
 
