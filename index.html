@@ -16,37 +16,69 @@
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="#amina">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-transparent">
-      <div class="container">
-        <a class="navbar-brand fw-bold text-white" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <img src="css/images/logo3.png" alt="Logo" style="width: 80px;" />
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto text-center" id="navbarLinks">
-            <li class="nav-item"><a class="nav-link" href="#home" data-translate="nav-home">الصفحة الرئيسية</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about" data-translate="nav-about">نبذة عنا</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services" data-translate="nav-services">خدماتنا</a></li>
-            <li class="nav-item"><a class="nav-link" href="#works" data-translate="nav-works">الإنجازات</a></li>
-            <li class="nav-item"><a class="nav-link" href="#Values" data-translate="nav-values">القيم</a></li>
-            <li class="nav-item"><a class="nav-link" href="#team" data-translate="nav-team">فريق العمل</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact" data-translate="nav-contact">تواصل معنا</a></li>
+    <div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-transparent">
+  <div class="container d-flex align-items-center justify-content-between position-relative">
+
+    <!-- زرار التوجل يمين على الموبايل -->
+    <button class="navbar-toggler d-lg-none order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- لوجو في المنتصف على الموبايل / يمين على اللارج -->
+    <div class="logo-container mx-auto order-2">
+      <img src="css/images/logo3.png" alt="Logo" style="width: 80px;" />
+    </div>
+
+    <!-- زر اللغة شمال في الموبايل / شمال في الكبير -->
+    <ul class="navbar-nav d-flex order-3 d-lg-none">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle fw-bold text-white px-2" href="#" id="languageDropdownMobile" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-globe fa-xl"></i>
+        </a>
+        <ul class="dropdown-menu text-center" aria-labelledby="languageDropdownMobile">
+          <li><a class="dropdown-item" href="#" onclick="setLanguage('ar')">العربية</a></li>
+          <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- روابط التنقل -->
+    <div class="collapse navbar-collapse w-100 mt-2 mt-lg-0" id="navbarNav">
+      <ul class="navbar-nav mx-auto text-center" id="navbarLinks">
+        <li class="nav-item"><a class="nav-link" href="#home" data-translate="nav-home">الصفحة الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-translate="nav-about">نبذة عنا</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services" data-translate="nav-services">خدماتنا</a></li>
+        <li class="nav-item"><a class="nav-link" href="#works" data-translate="nav-works">الإنجازات</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Values" data-translate="nav-values">القيم</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team" data-translate="nav-team">فريق العمل</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-translate="nav-contact">تواصل معنا</a></li>
+      </ul>
+
+      <!-- زر اللغة للشاشات الكبيرة -->
+      <ul class="navbar-nav ms-auto d-none d-lg-flex">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-bold text-white px-3" href="#" id="languageDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-globe fa-xl"></i>
+          </a>
+          <ul class="dropdown-menu text-center" aria-labelledby="languageDropdown">
+            <li><a class="dropdown-item" href="#" onclick="setLanguage('ar')">العربية</a></li>
+            <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
           </ul>
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fw-bold text-white  px-3" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-globe fa-xl "></i>
-              </a>
-              <ul class="dropdown-menu text-center" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item" href="#" onclick="setLanguage('ar')"> العربية</a></li>
-                <li><a class="dropdown-item" href="#" onclick="setLanguage('en')"> English</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  </nav>
+
+
 
     <header id="home" class="vh-100 d-flex justify-content-center align-items-center">
       <div class="animate__animated animate__backInRight animate__repeat-infinity header-caption text-white text-end">
@@ -301,7 +333,7 @@
             <a href="https://maps.app.goo.gl/qrdohj3ip5Vofu9U8?g_st=aw" class="text-decoration-none"><i class="fa-solid fa-location-arrow"></i></a>
           </div>
           <h6 class="fw-bolder fs-6">Address</h6>
-          <p class="text-muted">6834 Hollywood Blvd - Los Angeles CA</p>
+          <p class="text-muted"></p>
         </div>
         <div class="col-lg-3 col-12 col-md-6 text-center contact-info">
           <div class="icon-contact fs-1">

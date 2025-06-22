@@ -75,9 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("animate__animated", "animate__flipInX");
+        entry.target.classList.add("animate__animated", "animate__zoomIn");
         entry.target.addEventListener("animationend", () => {
-          entry.target.classList.remove("animate__animated", "animate__flipInX");
+          entry.target.classList.remove("animate__animated", "animate__zoomIn");
         });
       }
     });
@@ -150,6 +150,16 @@ $(document).ready(function(){
   const elements = document.querySelectorAll(".animate-on-scrolledRight");
   elements.forEach(el => observer.observe(el));
 });
+
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 500);
+  });
+
+
 
 
 
