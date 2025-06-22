@@ -60,15 +60,30 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("animate__animated", "animate__fadeInDown");
+        entry.target.classList.add("animate__animated", "animate__jackInTheBox");
         entry.target.addEventListener("animationend", () => {
-          entry.target.classList.remove("animate__animated", "animate__fadeInDown");
+          entry.target.classList.remove("animate__animated", "animate__jackInTheBox");
         });
       }
     });
   });
 
   const elements = document.querySelectorAll(".animate-on-scrolls");
+  elements.forEach(el => observer.observe(el));
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__animated", "animate__flipInX");
+        entry.target.addEventListener("animationend", () => {
+          entry.target.classList.remove("animate__animated", "animate__flipInX");
+        });
+      }
+    });
+  });
+
+  const elements = document.querySelectorAll(".animate-on-scroll");
   elements.forEach(el => observer.observe(el));
 });
 
@@ -80,7 +95,7 @@ $(document).ready(function(){
     nav: false,          
     dots: true,           
     autoplay: true,        
-    autoplayTimeout: 1500,
+    autoplayTimeout: 2000,
     autoplayHoverPause: false,
     responsive:{
       0:{ items: 1 },
@@ -89,6 +104,53 @@ $(document).ready(function(){
     }
   });
 });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (navbarCollapse.classList.contains('show')) {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: true
+          });
+        }
+      });
+    });
+  
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__animated", "animate__fadeInLeft");
+        entry.target.addEventListener("animationend", () => {
+          entry.target.classList.remove("animate__animated", "animate__fadeInLeft");
+        });
+      }
+    });
+  });
+
+  const elements = document.querySelectorAll(".animate-on-scrolledLeft");
+  elements.forEach(el => observer.observe(el));
+});
+ document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__animated", "animate__fadeInRight");
+        entry.target.addEventListener("animationend", () => {
+          entry.target.classList.remove("animate__animated", "animate__fadeInRight");
+        });
+      }
+    });
+  });
+
+  const elements = document.querySelectorAll(".animate-on-scrolledRight");
+  elements.forEach(el => observer.observe(el));
+});
+
 
 
 

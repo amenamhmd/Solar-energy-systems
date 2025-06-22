@@ -45,7 +45,7 @@ const translations = {
     "value2": "صارمه للتاكد من انها تلبي اعلى معايير الجوده والصناعه في هذا المجال",
 
     "team-title": "فريق العمل",
-    "team1": "الشركه لديها فريق عمل من المهندسين والفني وخدمه العملاء لديهم خبره واسعه في مجال الطاقه الشمسيه <br>وعلى راسهم مهندس احمد إبراهيم",
+    "team1": "الشركه لديها فريق عمل من المهندسين والفني وخدمه العملاء لديهم خبره واسعه في مجال الطاقه الشمسيه وعلى راسهم مهندس احمد إبراهيم",
     "team2": "نحن نعمل بجميع منتجات الطاقه من الواح وشاسيهات وانفرتارات والواح حمايات",
     "team3": "ونحن نعمل دراسه كامله لكل محطه خاصه بها وليس تطبيق كل المحطات بنفس المكونات والانواع نضع كل نوع <br>في المحطة المناسب لها",
    " team4": "دراسه جدوى كامله للمكان و موقع المحطه لتحديد الانواع والقدرات المناسبه",
@@ -53,7 +53,24 @@ const translations = {
     "note": "تنويه :",
     "note-text": "لكل محطه دراسه خاصه بها",
 
-    "contact-title": "تواصل معنا"
+    "contact-title": "تواصل معنا",
+     "work-card-1-title": "محطه بقدرة 100 كيلو وات طريق مصر اسكندريه الزراعي",
+      "work-card-1-text": "محافظه الغربيه مصنع الأستاذ: احمد عايد (مصنع المراعي)",
+      "work-card-2-title": "محطة بقدرة 90 كيلو وات طريق وادي النطرون العلمين",
+      "work-card-2-text": "مزرعه نبع البركه",
+      "work-card-3-title": ". محطه بقدره 25 كيلو وات (متحركه) بمدينه العلمين",
+      "work-card-3-text": "للأستاذ: حسن عبد العليم",
+      "work-card-4-title": "محطه أستاذ: سيد الشبراوي في سيناء",
+      "work-card-5-title": ". محطه قدرتها 105 ونص كيلو وات مع توفير مكونات البئر خلال شهر ابريل 2025",
+      "work-card-6-title": "محطه أستاذ: سيد الشبراوي في سيناء بئر العبد",
+      "work-card-7-title": "محطه أستاذ: بويد بمطروح",
+      "work-card-8-title": "محطه الأستاذ: عطيوة الفقي بمطروح",
+      "work-card-9-title": "محطه الأستاذ: عاشور ادريس بمطروح",
+      "work-card-10-title": "محطه الأستاذ: ابراهيم كتكت بطنطا",
+      "work-card-11-title": ". محطه الأستاذ: رضا البري بزفتي",
+      "work-card-12-title": ". محطه الأستاذ: ابو العلا السباعي",
+      "work-card-13-title": ". محطه الكابتن: محمد محسن بالمنوفية",
+      "work-card-14-title": ". محطة الاستاذ: طلعت شومان محطة بقدرة 75 كيلو وات اون جريد لمصنع بكفر الزيات خلال شهر مايو"
  
   },
   en: {
@@ -100,8 +117,8 @@ const translations = {
     "work-link": "Go somewhere",
     "values-title": "Company Values",
     "values-subtitle": "Company Guarantees:",
-    value1: "Quality control is a top priority; products and installations undergo inspection processes",
-    value2: "Strict checks to ensure they meet the highest quality and industry standards",
+    "value1": "Quality control is a top priority; products and installations undergo inspection processes",
+    "value2": "Strict checks to ensure they meet the highest quality and industry standards",
 
     "team-title": "Our Team",
     "team1": "Our company has a team of engineers, technicians, and customer service professionals with extensive experience in solar energy, led by Eng. Ahmed Ibrahim",
@@ -112,7 +129,24 @@ const translations = {
     "note": "Note:",
     "note-text": "Each station has its own dedicated study",
 
-    "contact-title": "Contact Us"
+    "contact-title": "Contact Us",
+      "work-card-1-title": "100 kW Station – Cairo-Alex Desert Road",
+      "work-card-1-text": "El Gharbia Governorate – Mr. Ahmed Ayed (Al Marai Factory)",
+      "work-card-2-title": "90 kW Station – Wadi El Natrun Alamein Road",
+      "work-card-2-text": "Naba'a Al Baraka Farm",
+      "work-card-3-title": "25 kW Mobile Station – El Alamein City",
+      "work-card-3-text": "For Mr. Hassan Abdel Aleem",
+      "work-card-4-title": "Mr. Sayed El Shabrawy Station – Sinai",
+      "work-card-5-title": "105.5 kW Station with Well Components – April 2025",
+      "work-card-6-title": "Mr. Sayed El Shabrawy Station – Bir El Abd, Sinai",
+      "work-card-7-title": "Mr. Boyd Station – Matrouh",
+      "work-card-8-title": "Mr. Atiya El Feki Station – Matrouh",
+      "work-card-9-title": "Mr. Ashour Idris Station – Matrouh",
+      "work-card-10-title": "Mr. Ibrahim Katkat Station – Tanta",
+      "work-card-11-title": "Mr. Reda El Bary Station – Zefta",
+      "work-card-12-title": "Mr. Abou El Ala El Sebaey Station",
+      "work-card-13-title": "Captain Mohamed Mohsen Station – Menoufia",
+      "work-card-14-title": "Mr. Talaat Shoman 75 kW On-Grid Station – Kafr El Zayat, May",
   }
   };
 

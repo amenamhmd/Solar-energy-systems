@@ -292,7 +292,7 @@ height: auto;
                         color:black;}
 .icon-contact i{
     color: #000;
-    background-color:rgba(0, 128, 0, 0.601);
+    background-color:cornflowerblue;
     border-radius: 50%;
     font-size: 24px;
     transition: 0.3s ease;
@@ -303,9 +303,7 @@ height: auto;
     width: 65px;
     height: 65px;
 }
-#contact{
-    background-color: #004d4074;
-}
+
 .contact-info:hover .icon-contact i{
          background-color: black;
          color:white;
@@ -322,7 +320,7 @@ footer p{
     color: #343434;
 }
 .container .row .col-12 .inner{
-    background-color: #d6d2d2;
+    background-color: beige;
     padding: 10%;
     border-radius: 10%;
 }.owl-carousel{
@@ -362,17 +360,16 @@ footer p{
 .titles{
    color:linear-gradient(to right, #3ca55c, #b5ac49);
 }
-/* خط افتراضي كبير ومقروء */
 body {
   font-family: 'Cairo', sans-serif;
-  font-size: 18px; /* حجم الخط الأساسي */
+  font-size: 18px; 
   line-height: 1.7;
 }
 
 /* لو الشاشة صغيرة زي الموبايل */
 @media (max-width: 767px) {
   body {
-    font-size: 18px; /* تخليه كبير وواضح برضو للموبايل */
+    font-size: 18px; 
   }
 
   h1, h2, h3 {
@@ -391,4 +388,19 @@ body {
     font-size: 1rem;
   }
 }
+@media (max-width: 767.98px) {
+    .custom-card {
+      height: 100vh !important;
+    }
+  }
+
+  /* على الشاشات المتوسطة وأكبر: الكارد ياخد ثلث الطول */
+  @media (min-width: 768px) {
+    .custom-card {
+      height: 50vh;
+    }
+  }
+  .ser-work{
+    background-color: rgba(0, 255, 242, 0.158);
+  }
 

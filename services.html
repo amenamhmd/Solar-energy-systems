@@ -4,16 +4,247 @@
   <link rel="icon" type="image" href="css/images/logo3.jpg">
 
 <head>
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  
-  <link rel="stylesheet" href="css/style.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black ">
+      <div class="container">
+        <a class="navbar-brand fw-bold " href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="css/images/logo3.png" alt="Logo" style="width: 80px;" />
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center " id="navbarLinks">
+            <li class="nav-item"><a class="nav-link" href="index.html#home" data-translate="nav-home">الصفحة الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about" data-translate="nav-about">نبذة عنا</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#services" data-translate="nav-services">خدماتنا</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#works" data-translate="nav-works">الإنجازات</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#Values" data-translate="nav-values">القيم</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#team" data-translate="nav-team">فريق العمل</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact" data-translate="nav-contact">تواصل معنا</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-bold text-white  px-3" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-globe fa-xl "></i>
+              </a>
+              <ul class="dropdown-menu text-center" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('ar')"> العربية</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('en')"> English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
+ <section id="works " class="ser-work">
+  <div class="row col-12 text-center fw-bolder">
+    <h2 class="h1 fw-bolder titles pt-lg-5  pt-5 text-center" data-translate="works-title">انجازات الشركه</h2>
+    <h3 data-translate="works-subtitle" class="pb-lg-2">نقدم خدمات احترافيه</h3>
+  </div>
+ <div class="container ">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-5 mb-4 animate-on-scrolledRight">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0013.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="منتج 1">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-1-title">محطه بقدرة 100 كيلو وات طريق مصر اسكندريه الزراعي</h5>
+          <p class="card-text fs-6" data-translate="work-card-1-text">محافظه الغربيه مصنع الأستاذ: احمد عايد (مصنع المراعي)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5 mb-4">
+      <div class="card shadow border-0 h-100 animate-on-scrolledLeft">
+        <img src="css/images/IMG-20250615-WA0014.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="منتج 2">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-2-title">محطة بقدرة 90 كيلو وات طريق وادي النطرون العلمين</h5>
+          <p class="card-text fs-6" data-translate="work-card-2-text">مزرعه نبع البركه</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START: Remaining Cards -->
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-5 mb-4">
+      <div class="card shadow border-0 h-100 animate-on-scrolledRight">
+        <img src="css/images/IMG-20250615-WA0016.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="منتج 1">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-3-title">محطه بقدره 25 كيلو وات (متحركه) بمدينه العلمين</h5>
+          <p class="card-text fs-6" data-translate="work-card-3-text">للأستاذ: حسن عبد العليم</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5 mb-4">
+      <div class="card shadow border-0 h-100 animate-on-scrolledLeft">
+        <img src="css/images/IMG-20250615-WA0017.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="منتج 2">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-4-title">محطه أستاذ: سيد الشبراوي في سيناء</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center ">
+    <div class="col-12 col-lg-5 mb-4 animate-on-scrolledRight">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0018.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="منتج 1">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-5-title">محطه قدرتها 105 ونص كيلو وات مع توفير مكونات البئر خلال شهر ابريل 2025</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5 mb-4 animate-on-scrolledLeft">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0019.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="محطه أستاذ: سيد الشبراوي في سيناء ">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-6-title">محطه أستاذ: سيد الشبراوي في سيناء بئر العبد</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center ">
+    <div class="col-12 col-lg-5 mb-4 animate-on-scrolledRight">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0021.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="منتج 1">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-7-title">محطه أستاذ: بويد بمطروح</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5 mb-4 animate-on-scrolledLeft">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0022.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="محطه أستاذ: سيد الشبراوي في سيناء ">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-8-title">محطه الأستاذ: عطيوة الفقي بمطروح</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center ">
+    <div class="col-12 col-lg-5 mb-4 animate-on-scrolledRight">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0029.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="منتج 1">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-9-title">محطه الأستاذ: عاشور ادريس بمطروح</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5 mb-4 animate-on-scrolledLeft">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0024.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="محطه أستاذ: سيد الشبراوي في سيناء ">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-10-title">محطه الأستاذ: ابراهيم كتكت بطنطا</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center animate-on-scrolledRight">
+    <div class="col-12 col-lg-5 mb-4">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0025.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="منتج 1">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-11-title">محطه الأستاذ: رضا البري بزفتي</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5 mb-4">
+      <div class="card shadow border-0 h-100 animate-on-scrolledLeft">
+        <img src="css/images/IMG-20250615-WA0026.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="محطه أستاذ: سيد الشبراوي في سيناء ">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-12-title">محطه الأستاذ: ابو العلا السباعي</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center ">
+    <div class="col-12 col-lg-5 mb-4 animate-on-scrolledRight">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0027.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="منتج 1">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-13-title">محطه الكابتن: محمد محسن بالمنوفية</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5 mb-4 animate-on-scrolledLeft">
+      <div class="card shadow border-0 h-100">
+        <img src="css/images/IMG-20250615-WA0028.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="محطه أستاذ: سيد الشبراوي في سيناء ">
+        <div class="card-body text-center d-flex flex-column align-items-center justify-content-center" style="padding-top: 1.5rem;">
+          <h5 class="card-title fs-4 mb-2" data-translate="work-card-14-title">محطة الاستاذ: طلعت شومان محطة بقدرة 75 كيلو وات اون جريد لمصنع بكفر الزيات خلال شهر مايو</h5>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</section>
+      <!-- contact -->
+ <section id="contact" class="bg-primary-subtle overflow-hidden">
+  <div class="container animate-on-scroll ">
+    <div class="row col-12 text-center pb-5 fw-bolder">
+      <h2 class="h1 titles fs-2" data-translate="contact-title">تواصل معنا</h2>
+    </div>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-lg-3 col-12 col-md-6 text-center contact-info">
+          <div class="icon-contact fs-1">
+            <a href="https://maps.app.goo.gl/qrdohj3ip5Vofu9U8?g_st=aw" class="text-decoration-none"><i class="fa-solid fa-location-arrow"></i></a>
+          </div>
+          <h6 class="fw-bolder fs-6">Address</h6>
+          <p class="text-muted">6834 Hollywood Blvd - Los Angeles CA</p>
+        </div>
+        <div class="col-lg-3 col-12 col-md-6 text-center contact-info">
+          <div class="icon-contact fs-1">
+            <a href="https://wa.me/201090006997" class="text-decoration-none"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <h6 class="fw-bolder fs-6">Whatsapp</h6>
+          <p class="text-muted">01090006997</p>
+        </div>
+        <div class="col-lg-3 col-12 col-md-6 text-center contact-info">
+          <div class="icon-contact fs-1">
+            <a href="tel:01090006997" class="text-decoration-none"><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <h6 class="fw-bolder fs-6">Phone</h6>
+          <p class="text-muted">+20 010 2517 8918</p>
+        </div>
+        <div class="col-lg-3 col-12 col-md-6 text-center contact-info">
+          <div class="icon-contact fs-1">
+            <a href="https://www.facebook.com/share/19DRbZGYPp/" class="text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <h6 class="fw-bolder fs-6">Facebook</h6>
+          <p class="text-muted">مهندس احمد ابراهيم لأنظمة الطاقة الشمسية</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- footer -->
+  <footer class="text-center bg-black">
+   <p class="py-4">Designed by Eng/Amena Mohamed</p>
+  </footer>
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lang.js"></script>
 </body>
