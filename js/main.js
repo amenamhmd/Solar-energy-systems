@@ -55,22 +55,7 @@ function toggleNavbarBackground() {
 window.addEventListener("scroll", toggleNavbarBackground);
 window.addEventListener("load", toggleNavbarBackground);
 
-// الأنميشن عند التمرير (Fade In Down)
-document.addEventListener("DOMContentLoaded", function () {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animate__animated", "animate__jackInTheBox");
-        entry.target.addEventListener("animationend", () => {
-          entry.target.classList.remove("animate__animated", "animate__jackInTheBox");
-        });
-      }
-    });
-  });
 
-  const elements = document.querySelectorAll(".animate-on-scrolls");
-  elements.forEach(el => observer.observe(el));
-});
 document.addEventListener("DOMContentLoaded", function () {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -120,36 +105,6 @@ $(document).ready(function(){
     });
   
   });
-  document.addEventListener("DOMContentLoaded", function () {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animate__animated", "animate__fadeInLeft");
-        entry.target.addEventListener("animationend", () => {
-          entry.target.classList.remove("animate__animated", "animate__fadeInLeft");
-        });
-      }
-    });
-  });
-
-  const elements = document.querySelectorAll(".animate-on-scrolledLeft");
-  elements.forEach(el => observer.observe(el));
-});
- document.addEventListener("DOMContentLoaded", function () {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animate__animated", "animate__fadeInRight");
-        entry.target.addEventListener("animationend", () => {
-          entry.target.classList.remove("animate__animated", "animate__fadeInRight");
-        });
-      }
-    });
-  });
-
-  const elements = document.querySelectorAll(".animate-on-scrolledRight");
-  elements.forEach(el => observer.observe(el));
-});
 
   window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
